@@ -1,4 +1,80 @@
-body{   
-    height: 100%;
-    background-color: darksalmon;
+/* Color Theme Swatches in Hex */
+.Architecture-1-hex { color: #D9D3C7; }
+.Architecture-2-hex { color: #A69B8D; }
+.Architecture-3-hex { color: #D9A171; }
+.Architecture-4-hex { color: #736253; }
+.Architecture-5-hex { color: #262626; }
+
+/* Color Theme Swatches in RGBA */
+.Architecture-1-rgba { color: rgba(216, 210, 199, 1); }
+.Architecture-2-rgba { color: rgba(165, 154, 140, 1); }
+.Architecture-3-rgba { color: rgba(216, 161, 112, 1); }
+.Architecture-4-rgba { color: rgba(114, 97, 82, 1); }
+.Architecture-5-rgba { color: rgba(38, 38, 38, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Architecture-1-hsla { color: hsla(39, 18, 81, 1); }
+.Architecture-2-hsla { color: hsla(33, 12, 60, 1); }
+.Architecture-3-hsla { color: hsla(28, 57, 64, 1); }
+.Architecture-4-hsla { color: hsla(28, 16, 38, 1); }
+.Architecture-5-hsla { color: hsla(0, 0, 15, 1); }
+
+
+body{
+    display: flex;
+height: 100%;
+width: 100%;
+background-color: darksalmon;
+margin: 0px 0px 0px 0px;
+
+
+}
+h1  {
+    height: 50%;
+    width: 50%;
+    
+}
+
+
+h2 {
+color:white;
+margin: 0px;
+text-align: center;
+}
+p {
+    color: aliceblue;
+    text-align: center;
+
+}
+div.redbox {
+    width: 100px;
+    height:25px;
+    background-color: red;
+}
+div.bluebox {
+    width: 100px;
+    height: 25px;
+    background-color: blue;
+
+}
+
+div.orangebox {
+    width: 100px;
+    height: 25px;
+    background-color: orange;
+}
+/* @media (min-width: 576px) */
+
+.sub-container {
+    height: 50%;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    flex-flow: center;
+    justify-content: space-around;
+    align-items: center;
+}
+div.main-container {
+    height: 50%;
+    width: 100%;
+    background-color: #D9A171;
 }
