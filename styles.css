@@ -21,19 +21,13 @@
 
 
 body{
-    display: flex;
-height: 100%;
+    display: grid;
+height: 50%;
 width: 100%;
-background-color: darksalmon;
+/* background-color: darksalmon; */
 margin: 0px 0px 0px 0px;
-
-
 }
-h1  {
-    height: 50%;
-    width: 50%;
-    
-}
+
 
 
 h2 {
@@ -47,34 +41,89 @@ p {
 
 }
 div.redbox {
-    width: 100px;
+    width: auto;
     height:25px;
     background-color: red;
+    
 }
 div.bluebox {
-    width: 100px;
+    width: auto;
     height: 25px;
     background-color: blue;
 
 }
 
 div.orangebox {
-    width: 100px;
+    width: auto;
     height: 25px;
     background-color: orange;
 }
-/* @media (min-width: 576px) */
+
+   #bluebox {
+    grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 30px;   
+
+   }
+   #redbox {
+    grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 30px;       
+   }
+   #orangebox {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 30px;   
+   }
+   .main-container {
+       display: grid;
+       width: auto;
+  background-color:aqua; 
+  /* border: solid blue; */
+  text-align: center;
+  color: white;
+  /* grid-template-columns: repeat(3, auto);
+   */
+   }
+   h1  {
+   /* border: 1px solid blue; */
+   grid-column: 1/-1;
+   grid-row: 1/2;
+    padding: 100px;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+
 
 .sub-container {
-    height: 50%;
-    background-color: rgb(5, 5, 5);
-    display: flex;
-    flex-flow: center;
-    justify-content: space-around;
-    align-items: center;
+    display: grid; 
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 30px;
 }
-div.main-container {
-    height: 50%;
-    width: 100%;
-    background-color: #D9A171;
-}
+   div.main-container {
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, auto);
+   }
+   @media (min-width:600px) {
+    .sub-container {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    }
