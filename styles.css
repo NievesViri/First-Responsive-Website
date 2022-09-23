@@ -22,7 +22,7 @@
 
 body{
     display: grid;
-height: 50%;
+
 width: 100%;
 /* background-color: darksalmon; */
 margin: 0px 0px 0px 0px;
@@ -107,7 +107,8 @@ div.orangebox {
 
 
 .sub-container {
-    display: grid; 
+display: flex;
+justify-content: space-around;
   grid-column: 1/-1;
   grid-row: 2/3;
   text-align: center;
@@ -120,10 +121,11 @@ div.orangebox {
    grid-template-columns: repeat(3, auto);
   grid-template-columns: repeat(3, auto);
    }
-   @media (min-width:600px) {
+   @media (max-width:600px) {
     .sub-container {
         font-size: 1.5rem;
         line-height: 1.5;
+        flex-direction: column;
     }
 
     }
